@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <label for="Name">Name:</label>
+        <input type="text" id = "Name", name="Name" placeholder="Enter the name">
+
+        <div>
+            <input type="radio" id="age" name="age" value="<18">
+            <label for="age">Under 18</label>
+
+            <input type="radio" id="age" name="age" value="19-35">
+            <label for="age">19-35</label>
+
+            <input type="radio" id="age" name="age" value="36-48">
+            <label for="age">36-48</label>
+
+            <input type="radio" id="age" name="age" value=">49">
+            <label for="age">Over 49</label>
+        </div>
+
+        <div>
+            <label for="professions">Professions</label>
+            <input list="professions" name="profession" placeholder="Select Profession">
+            <datalist id="professions">
+                <option value="Engineer">
+                <option value="Doctor">
+                <option value="Teacher">
+                <option value="Artist">
+                <option value="Programmer">
+                <option value="Student">
+                <option value="Accountant">
+                <!-- Add more options as needed -->
+            </datalist>
+        </div>
+
+        <div>
+            <label for="countries">Countries</label>
+            <input list="countries" name="countries" placeholder="Select Country">
+            <datalist id="countries">
+                <option value="India"></option>
+                <option value="USA"></option>
+                <option value="UAE"></option>
+                <option value="Nepal"></option>
+                <option value="England"></option>
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
